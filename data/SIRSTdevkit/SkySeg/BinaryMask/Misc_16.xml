@@ -1,0 +1,22 @@
+<annotation>
+    <folder>PNGImages</folder>
+    <filename>Misc_16.png</filename>
+    <size>
+        <width>284</width>
+        <height>208</height>
+        <depth>3</depth>
+    </size>
+    <object>
+        <name>Sky</name>
+        <difficult>0</difficult>
+        <pixels>
+            <id>0</id>
+        </pixels>
+        <bndbox>
+            <xmin>1</xmin>
+            <ymin>1</ymin>
+            <xmax>283</xmax>
+            <ymax>207</ymax>
+        </bndbox>
+    </object>
+</annotation>

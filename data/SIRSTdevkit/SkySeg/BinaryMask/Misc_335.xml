@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<annotation>
+    <folder>PNGImages</folder>
+    <filename>Misc_335.png</filename>
+    <size>
+        <width>294</width>
+        <height>247</height>
+        <depth>3</depth>
+    </size>
+    <object>
+        <name>Sky</name>
+        <difficult>0</difficult>
+        <pixels>
+            <id>0</id>
+        </pixels>
+        <bndbox>
+            <xmin>1</xmin>
+            <ymin>1</ymin>
+            <xmax>293</xmax>
+            <ymax>246</ymax>
+        </bndbox>
+    </object>
+</annotation>

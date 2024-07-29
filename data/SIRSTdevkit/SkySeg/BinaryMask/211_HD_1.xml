@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<annotation>
+    <folder>PNGImages</folder>
+    <filename>211_HD_1.png</filename>
+    <size>
+        <width>640</width>
+        <height>640</height>
+        <depth>3</depth>
+    </size>
+    <object>
+        <name>Sky</name>
+        <difficult>0</difficult>
+        <pixels>
+            <id>0</id>
+        </pixels>
+        <bndbox>
+            <xmin>1</xmin>
+            <ymin>1</ymin>
+            <xmax>639</xmax>
+            <ymax>639</ymax>
+        </bndbox>
+    </object>
+</annotation>
