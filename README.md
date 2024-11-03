@@ -39,13 +39,17 @@ In the DenseSIRST dataset, each image is meticulously annotated with three types
 
 ### Statistical Characteristics
 
-<p float="left">
+Most targets are extremely small, predominantly below $5 \times 5$ pixels. The $ 3 \times 3$ pixels size is the most frequent, aligning with the characteristics of small target detection in infrared imagery. The 90% targets have local contrast below $2$. This low contrast is indicative of the inherent difficulty in detecting such targets against cluttered backgrounds. Moreover, the presence of nearby targets within dense clusters can inadvertently be included in the background calculation, leading to an underestimation of local contrast and further complicating detection. Only a minority of targets are the brightest points in their respective images.This characteristic emphasizes the inadequacy of brightness as a sole distinguishing feature for target detection. In conclusion, the DenseSIRST dataset, with its wide range of image dimensions, prevalence of small target sizes, and low local contrast, provides a realistic and challenging benchmark for infrared small target detection algorithms.
+
+![object sizes](./docs/object_sizes.png)
+![image lcm](./docs/image_lcm.png)
+![image brightness](./docs/image_brightness.png)
+
+<!-- <p float="left">
   <img src="./docs/object_sizes.png" width="32%" />
   <img src="./docs/image_lcm.png" width="33%" />
   <img src="./docs/image_brightness.png" width="33%" />
-</p>
-
-Most targets are extremely small, predominantly below $5 \times 5$ pixels. The $ 3 \times 3$ pixels size is the most frequent, aligning with the characteristics of small target detection in infrared imagery. The 90% targets have local contrast below $2$. This low contrast is indicative of the inherent difficulty in detecting such targets against cluttered backgrounds. Moreover, the presence of nearby targets within dense clusters can inadvertently be included in the background calculation, leading to an underestimation of local contrast and further complicating detection. Only a minority of targets are the brightest points in their respective images.This characteristic emphasizes the inadequacy of brightness as a sole distinguishing feature for target detection. In conclusion, the DenseSIRST dataset, with its wide range of image dimensions, prevalence of small target sizes, and low local contrast, provides a realistic and challenging benchmark for infrared small target detection algorithms.
+</p> -->
 
 
 ## Dataset Structure
