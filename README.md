@@ -93,3 +93,24 @@ For both training and inference, the following dataset structure is required:
 
 Please make sure that the path of your data set is consistent with the `data_root` in `configs/detection/_base_/datasets/sirst_det_seg_voc_skycp.py`
 
+## Citation
+
+If you use our dataset or code in your research, please cite this project.
+
+```bibtex
+@article{xiao2024bafenet,
+	title={Background Semantics Matter: Cross-Task Feature Exchange Network for Clustered Infrared Small Target Detection With Sky-Annotated Dataset}, 
+	author={Mengxuan Xiao and Qun Dai and Yiming Zhu and Kehua Guo and Huan Wang and Xiangbo Shu and Jian Yang and Yimian Dai},
+	year={2024},
+	journal={arXiv preprint arXiv:2407.20078},
+}
+
+@article{dai2023one,
+  title={One-stage cascade refinement networks for infrared small target detection},
+  author={Dai, Yimian and Li, Xiang and Zhou, Fei and Qian, Yulei and Chen, Yaohong and Yang, Jian},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  volume={61},
+  pages={1--17},
+  year={2023},
+}
+```
