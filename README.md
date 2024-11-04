@@ -31,15 +31,25 @@ To bridge this gap, we propose DenseSIRST: a carefully annotated infrared image 
 
 ### Dataset Composition
 
-The DenseSIRST dataset comprises 1024 infrared images, with a total of 13,655 densely clustered small targets. The images in the DenseSIRST dataset cover a wide range of realistic scenarios, including urban areas, mountainous regions, maritime environments, and cloudy scenes. This diversity enables the development and assessment of detection algorithms that can generalize well to various real-world applications. 
+- The DenseSIRST dataset comprises 1,024 infrared images.
+- It contains a total of 13,655 densely clustered small targets.
+- The dataset covers a variety of realistic scenarios, including:
+    - Urban areas
+    - Mountainous regions
+    - Maritime environments
+    - Cloudy scenes
 
 ### Annotations and Labels
 
-In the DenseSIRST dataset, each image is meticulously annotated with three types of labels: pixel-level masks, bounding boxes, and point annotations. The pixel-level masks provide precise segmentation of each target, enabling the evaluation of algorithms at a fine-grained level. Bounding box annotations encapsulate each target with a rectangular box, facilitating the assessment of detection performance using metrics such as precision, recall, and F1 score. Point annotations mark the center of each target, allowing for the evaluation of localization accuracy.
-
+- Each image is annotated with three types of labels:
+    - Pixel-level masks: Provide precise segmentation of each target for fine-grained evaluation.
+    - Bounding boxes: Encapsulate each target, allowing for assessment of detection performance using metrics such as precision, recall, and F1 score.
+    - Point annotations: Mark the center of each target for evaluating localization accuracy.
 ### Statistical Characteristics
 
-Most targets are extremely small, predominantly below $5 \times 5$ pixels. The $3 \times 3$ pixels size is the most frequent, aligning with the characteristics of small target detection in infrared imagery. The 90% targets have local contrast below $2$. This low contrast is indicative of the inherent difficulty in detecting such targets against cluttered backgrounds. Moreover, the presence of nearby targets within dense clusters can inadvertently be included in the background calculation, leading to an underestimation of local contrast and further complicating detection. Only a minority of targets are the brightest points in their respective images.This characteristic emphasizes the inadequacy of brightness as a sole distinguishing feature for target detection. In conclusion, the DenseSIRST dataset, with its wide range of image dimensions, prevalence of small target sizes, and low local contrast, provides a realistic and challenging benchmark for infrared small target detection algorithms.
+- Most targets are extremely small, predominantly below 5 × 5 pixels. The most frequent target size is 3 × 3 pixels, reflecting small target detection in infrared imagery.
+- 90% of targets have local contrast below 2, indicating difficulty in detecting targets against cluttered backgrounds. Nearby targets within dense clusters can be included in background calculations, leading to underestimation of local contrast, complicating detection.
+- Only a minority of targets are the brightest points in their images, highlighting the inadequacy of brightness as a distinguishing feature for target detection.
 
 <div align="center">
   <img src="./docs/object_sizes.png" width="49.5%">
